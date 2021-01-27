@@ -233,6 +233,8 @@ body {
     .container{
         display: flex;
         flex-direction: column;
+        column-gap: 10%;
+        row-gap: 5%;
 
         .mob{
             width: 100%;
