@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+
+  .mob {
+    width: 50%;
+    // border: 2px solid rebeccapurple;
+    .cont-left {
+      background: rgb(145, 59, 254);
+      background: linear-gradient(
+        90deg,
+        rgba(145, 59, 254, 1) 35%,
+        rgba(219, 66, 255, 1) 100%
+      );
+      height: 90%;
+      width: 35%;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      left: -10%;
+      position: absolute;
+    }
+
+    .mobile {
+      position: absolute;
+      top: 10%;
+      left: 41%;
+      height: 500px;
+      width: 250px;
+      border: 1px solid white;
+      border-radius: 25px;
+      padding: 8px;
+      position: relative;
+      background-color: #fff;
+      box-shadow: 5px 8px 11px 5px #b2b2b2;
+      // border: 1px solid rebeccapurple;
+      overflow: hidden;
+
+      .mobile-notch {
+        background-color: white;
+        height: 40px;
+        width: 50%;
+        // border: 2px solid rebeccapurple;
+        border-radius: 15px;
+        position: absolute;
+        top: -17px;
+        left: 25%;
+        right: 25%;
+        border: none;
+      }
+
+      .mobile-nav {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        width: 100%;
+        height: 15%;
+        background: rgb(145, 59, 254);
+        background: linear-gradient(
+          90deg,
+          rgba(145, 59, 254, 1) 35%,
+          rgba(219, 66, 255, 1) 100%
+        );
+        padding: 15px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 25px;
+        font-size: 0.5rem;
+
+        .nav-left {
+          display: flex;
+          align-items: center;
+          column-gap: 6px;
+          img {
+            width: 12%;
+            border-radius: 50%;
+            border: 2px solid white;
+          }
+          .user {
+            .user_name {
+              font-size: 0.7rem;
+              margin-bottom: 3px;
+            }
+            .user_status {
+              color: rgb(192, 191, 191);
+            }
+          }
+        }
+      }
+      .mobile-screen {
+        width: 100%;
+        height: 85%;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        background-color: #f5f3f8;
+        padding: 8px;
+        line-height: 1.4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .msg-box {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          .msg-left {
+            font-size: 0.6rem;
+            color: #c36ef8;
+            background-color: #ede5f4;
+            max-width: 70%;
+            padding: 5px 8px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+          }
+          .msg-img_div {
+            //   border: 4px solid gray;
+            width: 70%;
+            max-width: 70%;
+            height: 50px;
+            display: flex;
+            column-gap: 4px;
+            align-self: flex-end;
+          }
+          .msg-img_div img {
+            border-radius: 10px;
+            width: 30%;
+            height: 80%;
+          }
+
+          .msg-right {
+            font-size: 0.6rem;
+            color: rgb(92, 92, 92);
+            background-color: #ffffff;
+            max-width: 70%;
+            padding: 5px 8px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            align-self: flex-end;
+          }
+
+          .special-msg {
+            background: rgb(203, 65, 255);
+            background: linear-gradient(
+              90deg,
+              rgba(203, 65, 255, 1) 35%,
+              rgba(145, 59, 254, 1) 100%
+            );
+            max-width: 80%;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+
+            i {
+              margin-right: 8px;
+              color: rgb(202, 201, 201);
+            }
+
+            .s-msg {
+              color: rgb(202, 201, 201);
+            }
+
+            .price {
+              right: 8px;
+              position: absolute;
+              font-size: 0.8rem;
+              font-weight: bold;
+              letter-spacing: 1.5px;
+            }
+          }
+        }
+        .msg-input {
+          width: 100%;
+          background-color: white;
+          border-radius: 25px;
+          display: flex;
+          height: 10%;
+          padding: 8px;
+          align-items: center;
+          justify-content: space-between;
+
+          p {
+            font-size: 0.6rem;
+            color: rgb(187, 187, 187);
+          }
+
+          i {
+            font-size: 1.5rem;
+            color: #3d244e;
+          }
+        }
+      }
+    }
+  }
+
+  .booking_text {
+    align-self: center;
+    padding: 40px;
+    width: 50%;
+    // border: 2px solid rebeccapurple;
+
+    .title-text{
+        font-size: 2rem;
+        font-weight: bold;
+        color: #4f04b1;
+        margin-bottom: 20px;
+    }
+
+    .p-text{
+        line-height: 1.6;
+        color: rgb(146, 144, 144);
+        text-align: center;
+    }
+  }
+}
+
+@media (max-width: 978px){
+    .container{
+        display: flex;
+        flex-direction: column;
+
+        .mob{
+            width: 100%;
+            // border: 2px solid rebeccapurple;
+            height: 100vh;
+
+            .cont-left{
+                width: 60%;
+                height: 50%;
+                left: -25%;
+            }
+
+            .mobile{
+                top: 10%;
+                left: 20%;
+                // transform: translate(-50%, -50%);
+            }
+        }
+
+        .booking_text{
+            margin-top: 10%;
+            height: 100vh;
+            width: 100%;
+        }
+    }
+}
