@@ -193,6 +193,7 @@ body {
           padding: 8px;
           align-items: center;
           justify-content: space-between;
+          text-align: center;
 
           p {
             font-size: 0.6rem;
@@ -212,7 +213,7 @@ body {
     align-self: center;
     padding: 40px;
     width: 50%;
-    // border: 2px solid rebeccapurple;
+    text-align: center;
 
     .title-text{
         font-size: 2rem;
@@ -235,6 +236,7 @@ body {
         flex-direction: column;
         column-gap: 10%;
         row-gap: 5%;
+        text-align: center;
 
         .mob{
             width: 100%;
